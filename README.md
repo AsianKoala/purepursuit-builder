@@ -18,7 +18,6 @@ npm install
 npm start
 ```
 
-5. Input your waypoint values into the table
-6. Type in final angle (degrees), or leave blank to automatically calculate it based on the 2 last waypoints
-7. Hit generate and the Kotlin code will show up at the bottom of the page.
-8. Paste that in for `initialPath()`
+4. Input your waypoint values into the table
+5. Type in final angle (degrees), or leave blank to automatically calculate it based on the 2 last waypoints
+6. Hit generate and the Kotlin code will show up at the bottom of the page.
