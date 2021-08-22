@@ -36,11 +36,8 @@ function graphSetup() {
     var finalAngle = 0;
 
     $('#angle').on('change keydown paste input', function () {
-        console.log(this.value)
-
         if (this.value === "") {
             var table = calculator.getExpressions()[0];
-            console.log(table.columns);
             var x_set = table.columns[0].values;
             var y_set = table.columns[1].values;
             var slope = Math.atan2(y_set[y_set.length - 1] - y_set[y_set.length - 2], x_set[x_set.length - 1] - x_set[x_set.length - 2])
@@ -49,12 +46,11 @@ function graphSetup() {
             finalAngle = this.value * Math.PI / 180.0;
         }
 
-        console.log(finalAngle);
+        console.log('final angle: ' + finalangle);
     })
 
     $('#generate').click(function () {
         var table = calculator.getExpressions()[0];
-        console.log(table.columns);
         var x_set = table.columns[0].values;
         var y_set = table.columns[1].values;
         $('.output').remove();
@@ -71,7 +67,6 @@ function graphSetup() {
         waypoints += `
             .addPoint(StopWaypoint(${x_set[x_set.length - 1]}.0, ${y_set.length - 1}.0, 10.0, Angle(${finalAngle}, AngleUnit.RAD}))).build()`
         $('.output').html(waypoints);
-        console.log($('.output').html());
     });
 }
 

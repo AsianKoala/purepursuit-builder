@@ -15,8 +15,8 @@ server = http.createServer(function (request, response) {
     if (pathname == "/") {
         html = fs.readFileSync("index.html", "utf8");
         response.write(html);
-    } else if (pathname == "/desmos.js") {
-        script = fs.readFileSync("desmos.js", "utf8");
+    } else if (pathname == "/js/desmos.js") {
+        script = fs.readFileSync("js/desmos.js", "utf8");
         response.write(script);
     } else if (pathname == "/main.css") {
         css = fs.readFileSync("main.css", "utf8");
@@ -28,4 +28,4 @@ server = http.createServer(function (request, response) {
     console.log("Listening to  server on " + port);
 })
 
-open(`http://${hostname}:${port}/`, { app: 'chrome' });
+open(`http://${hostname}:${port}/`);
