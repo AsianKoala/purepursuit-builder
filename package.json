@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AsianKoala/purepursuit-builder/issues"
   },
-  "homepage": "https://github.com/AsianKoala/purepursuit-builder#readme"
+  "homepage": "https://github.com/AsianKoala/purepursuit-builder#readme",
+  "dependencies": {
+    "open": "^8.2.1"
+  }
 }
