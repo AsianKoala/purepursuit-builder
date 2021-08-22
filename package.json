@@ -1,0 +1,20 @@
+{
+  "name": "pathbuilder",
+  "version": "1.0.0",
+  "description": "Pure Pursuit path generator from an embedded Desmos graph.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsianKoala/purepursuit-builder.git"
+  },
+  "author": "Neil Mehra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsianKoala/purepursuit-builder/issues"
+  },
+  "homepage": "https://github.com/AsianKoala/purepursuit-builder#readme"
+}
